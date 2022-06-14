@@ -51,23 +51,22 @@ function game() {
    		let round = playRound(playerSelection, computerSelection);
    		console.log(round);
    		if ( round === "You Win! Paper beats Rock" || round === "You Win! Scissors beats Paper"
-   			|| round === "You Win! Rock beats Scissors" )
-   			{scoreP += 1;
+   				|| round === "You Win! Rock beats Scissors" ){
+   			scoreP += 1;
    			console.log(scoreP);}
    			
-   				else if ( round === "You Lose! Rock beats Scissors" || round === "You Lose! Scissors beats Paper"
-   						|| round === "You Lose! Paper beats Rock" )
-   					{scoreC += 1;
-   					console.log(scoreC);}
+   			else if ( round === "You Lose! Rock beats Scissors" || round === "You Lose! Scissors beats Paper"
+   						|| round === "You Lose! Paper beats Rock" ){
+   				scoreC += 1;
+   				console.log(scoreC);}
    	}
   
-
-if (scoreP > scoreC)
+	if (scoreP > scoreC)
    		console.log("You Win!");
-   	else if (scoreP < scoreC)
-   		console.log("You Lose!")
-   		else if (scoreP == scoreC)
-   			console.log("Draw!")
+   		else if (scoreP < scoreC)
+   			console.log("You Lose!");
+   			else if (scoreP == scoreC)
+   				console.log("Draw!");
 
 }
 
